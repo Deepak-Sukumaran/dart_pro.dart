@@ -1,39 +1,35 @@
 class father {
-  String address = "shelby";
+  String address = "shellby";
 
-  void details(String name, int age, int phone, String job) {
-    print("name  = $name");
-    print("age   = $age");
-    print("phone = $phone");
-    print("job   = $job");
+  void details(String name, int age , int phone, String job){
+    print("name = $name, ");
+    print("age = $age, ");
+    print("phone = $phone, ");
+    print("job = $job, ");
   }
 }
-
 class child extends father {
   @override
-  String address = "England";
+  String  address= " england";
 
   @override
-  void details(String name, int age, int rollno, String job) {
-    ///TODO: implement details
-
-    print("father details");
-    super.details('alan', 47, 9876543219, "Developer");
+  void details(String name, int age, int phone, String job) {
+    print("child details");
+    print("name = $name, ");
+    print("age = $age, ");
+    print("phone = $phone, ");
+    print("job = $job, ");
     print("house name = ${super.address}");
     print("place = $address");
+    print("------------------------------");
 
-    print("child details");
-    print("name  = $name");
-    print("age   = $age");
-    print("phone = $rollno");
-    print("job   = $job");
-    print("house name = ${super.address}");
+   print("Father details");
+    super.details("fedrik", 55, 1234579, "business");
+    print("housename = ${super.address}");
     print("place = $address");
   }
 }
-
-void main() {
+void main(){
   child obj = child();
-  obj.details("chole", 15, 7, "student");
-  // print("housename = ${obj.address}");
+  obj.details("Thomas", 25, 987654320, "business");
 }

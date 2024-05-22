@@ -1,17 +1,20 @@
 class family {
-  String housename = "kottarathil";
+  String housename = "Shellby";
 }
-class grandfather extends family{
-  String name1 ="david";
- }
- class father extends grandfather{
-  String name2 = "john";
- }
- class child extends father{
-  String name3 = "Alex";
- }
- void main(){
-  child obj = child();
-  print("iam ${obj.name3} ${obj.name2} ${obj.name1} ${obj.housename}");
 
- }
+class grandfather extends family {
+  String gname = "michele";
+}
+
+class father extends grandfather {
+  String fname = "fedrik";
+}
+class child extends father {
+  String cname = "Thomas";
+}
+void main(){
+  child obj = child();
+
+  var childname = ("iam ${obj.gname} ${obj.fname} ${obj.cname} ${obj.housename}");
+  print(childname);
+}
