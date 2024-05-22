@@ -1,5 +1,6 @@
 /// set -> basiclly unordered collection of value, which dose not support duplicate elements
 ///       since it follows linked hashset "set maintain insertion order"
+library;
 
 void main(){
   /// 1,literal way

@@ -1,5 +1,6 @@
 
 /// one parent class and more than one child class is heirarchial inheritance
+library;
 
 
 class car {
