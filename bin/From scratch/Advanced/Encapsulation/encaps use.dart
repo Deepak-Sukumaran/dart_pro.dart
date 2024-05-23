@@ -1,12 +1,11 @@
 import '33file encapsulated class.dart';
 
-void main() {
+void main (){
   data obj = data();
-  obj.myrating = 4.6; //set
-  obj.amount = 250;
-  print(obj.myname); //get , not set any value you get the default value
-  print(obj.myrating); //get
+  obj.myrating= 4.3;
+  obj.amount = 300000;
+
+  print(obj.productName);
+  print(obj.myrating);
   print(obj.amount);
 }
-
-/// if we are using only getter properties in this class then datas class will be read only for this particular class

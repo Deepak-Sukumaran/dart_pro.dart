@@ -1,24 +1,30 @@
 class data{
-  String? _name = "deepak";
+  String? _product = "keyboard";
   int? _price;
   double? _rating;
 
-  String? get myname{
-    return _name;
+  String? get productName{
+
+    return _product;
   }
-  set myname(String? name){
-    _name =name;
+
+  set productname (String? name){
+    _product = name;
   }
-  int? get amount{
+
+  int? get amount {
     return _price;
   }
-  set amount(int? price){
-    _price =price;
+
+  set amount (int? amount){
+    _price = amount;
   }
-double? get myrating{
+
+  double? get myrating {
     return _rating;
-}
-set myrating(double? rating){
-    _rating = rating;
-}
+  }
+
+  set myrating (double? myrating){
+    _rating = myrating;
+  }
 }

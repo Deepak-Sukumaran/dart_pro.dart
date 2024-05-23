@@ -1,46 +1,49 @@
 class father {
-  void fdetails(
-      String name, String familyname, int age, int phone, String job) {}
+  void fdetails(String name, int age, String job, int phone){
+
+  }
+}
+abstract class mother{
+  void mdetails(String name, int age, String job, int phone);
 }
 
-abstract class mother {
-  void mdetails(String name, String familyname, int age, int phone, String job);
-}
-
-class chid implements father, mother {
+class child implements father, mother{
   @override
-  void fdetails(
-      String name, String familyname, int age, int phone, String job) {
-    print("Father Details");
-    print("Name  =$name $familyname");
-    print("age   =$age");
-    print("Phone =$phone");
-    print("job   =$job");
+  void fdetails(String name, int age, String job, int phone) {
+   print("father details");
+   print("name= $name");
+   print("age= $age");
+   print("job= $job");
+   print("phone= $phone");
   }
 
   @override
-  void mdetails(
-      String name, String familyname, int age, int phone, String job) {
-    print("Mother Details");
-    print("Name  =$name $familyname");
-    print("age   =$age");
-    print("Phone =$phone");
-    print("job   =$job");
+  void mdetails(String name, int age, String job, int phone) {
+    print("mother details");
+    print("name= $name");
+    print("age= $age");
+    print("job= $job");
+    print("phone= $phone");
+
   }
 
-  void cdetails(
-      String name, String familyname, int age, int phone, String job) {
-    print("Child Details");
-    print("Name  =$name $familyname");
-    print("age   =$age");
-    print("Phone =$phone");
-    print("job   =$job");
+  void cdetails (String name, int age, String job, int phone){
+    print("child details");
+    print("name= $name");
+    print("age= $age");
+    print("job= $job");
+    print("phone= $phone");
   }
 }
 
-void main() {
-  chid obj = chid();
-  obj.fdetails("Michael", "Shelby", 57, 987654310, "Business");
-  obj.mdetails("Pauly", "Shelby", 48, 6543210987, "Business");
-  obj.cdetails("Thomas", "Shelby", 27, 7654321098, "Business");
-}
+void main(){
+  child obj = child();
+  obj.fdetails("Thomas", 55, "business", 9098765410);
+  print("------------------------------");
+  obj.mdetails("martha", 51, "business", 9087654321);
+  print("------------------------------");
+  obj.cdetails("bruce", 28, "business", 98727659876);
+} 
+
+
+

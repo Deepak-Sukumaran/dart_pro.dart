@@ -1,44 +1,46 @@
-mixin A {
+mixin A{
   int a = 10;
-  int b = 20;
-
-  void add() {
-    print("sum = ${a + b}");
+  int b= 20;
+  void add (){
+    print("sum = ${a+b}");
   }
 
-  void show(String name, String occasion);
+  void show(String  name, String occasion);
 }
 
 mixin B {
-  void demo(int c, int d) {
-    print("c d demo");
+
+  void demo (int c, int d){
+    print("cd demo");
     print("c= $c");
     print("d= $d");
-    print("c d demo function");
   }
-  void details (String division, int rollNo);
+
+  void details (String job, int age);
 }
 
-class C with A, B {
-
+class C with A ,B {
   @override
-  void details(String division, int rollNo) {
-    print("division= $division");
-    print("rollNo = $rollNo");
-  }
+  void details(String name, int age) {
 
-  @override
-  void show(String name, String occasion) {
     print("name = $name");
-    print("occasion = $occasion");
+    print("age = $age");
+
   }
 
-}
+  @override
+  void show(String product, String discription) {
+    print("product = $product");
+    print("discription = $discription");
 
-void main() {
+  }
+}
+void main(){
   C obj = C();
   obj.add();
-  obj.demo(2023, 2024);
-  obj.show("Deepak", "Developer");
-  obj.details( "division", 3);
+  obj.demo(20, 30);
+  obj.add();
+  obj.demo(30, 40);
+  obj.details("logi", 20);
+  obj.show("k380", "bluetooth");
 }
