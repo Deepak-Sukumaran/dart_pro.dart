@@ -1,6 +1,7 @@
 
 /// Typedef -> function aliasing / function replica
 /// syntax -> Typedef name (parameters);
+library;
 
 typedef maths = Function(int a, int b);
 
